@@ -32,7 +32,7 @@ Step 6 → Creation of deployment and service for EKS
 ````
 sudo apt update -y
 ````
-$ Setup  Docker $
+ Setup  Docker 
 ````
 sudo apt install docker.io -y
 sudo systemctl start docker
