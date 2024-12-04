@@ -3,7 +3,7 @@ Create EKS cluster using Terraform
 
 # PROJECT MARIO BROS
 
-##  $\color{blue} \textbf {Project  Workflow}$
+## {Project  Workflow}
 Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
