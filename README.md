@@ -20,11 +20,11 @@ Step 6 → Creation of deployment and service for EKS
 
 ### Step 1 → Login  and  basics  setup
 1. Click on launch Instance
-   ![instance](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/5fe51373-eaac-4f7c-9669-34c578277051)
-2. Connect to EC2-Instance
-   ![connect-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/9d518e77-6f65-4153-acfc-790a6eaf669a)
+   ![click on launch inst](https://github.com/user-attachments/assets/657cb38d-48a7-4c86-878c-717112096ad1)
 
+2. Connect to EC2-Instance
    
+
 5. Attach role to ec2 instance
 
 ### Step 2 → Setup  Tools
@@ -100,18 +100,19 @@ kubectl version --client
 ````
 ### Step 3 → IAM  Role  for  EC2
 create role:
-![role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/31a05c18-f34b-430d-b5cb-c5873ae6e9c5)
+![atach iamrole](https://github.com/user-attachments/assets/e4cbfd73-af93-45e5-bc87-3a659fb2fa90)
 
 ### Step 4 →Attach  IAM  role  with your  EC2 
 go to EC2 
 click on actions → security → modify IAM role option
 - administrator access
 - eks
-![image](https://github.com/user-attachments/assets/c23f9d00-505d-4a0d-b07d-c6b21d419748)
 
-![role-ec2](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/70cc0ebb-6063-4c4b-98df-7259a08749b8)
+![iam role1](https://github.com/user-attachments/assets/60016286-2323-43db-bcc8-2beae43f10b1)
 
-![modify-role](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/3e998e21-3654-43b0-8df0-496f009ef0a6)
+![iam role1](https://github.com/user-attachments/assets/0600b53e-25b9-49eb-bb29-75ed9720b00e)
+
+![iam policies for mariodb role project](https://github.com/user-attachments/assets/513768ee-6855-411d-be76-48bec7ba2ef0)
 
 ### Step 5 → Building Infrastructure  Using  terraform
 Install  GIT
@@ -122,7 +123,6 @@ cd Project-Super-Mario
 cd EKS-TF
 vim backend.tf
 ````
-![backend tf](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/6b9e648f-2f13-41e8-a66b-6b6e6e0a63de)
 
 Create \ Infra :
 ````
@@ -152,13 +152,12 @@ kubectl get svc mario-service
 ````
 copy the load balancer ingress and paste it on browser and your game is running
 
-![load balancer](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/d085951d-3398-44ad-b9cd-05c561b74664)
-
+![copy lb ingress](https://github.com/user-attachments/assets/3721fdf2-136b-4b81-a062-4a2a2973c0de)
 
 
 ###Final Output: Enjoy The Game 
 
-![output](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/edfff0b5-6507-48e4-b552-908671b59920)
+![enjoy the game](https://github.com/user-attachments/assets/0d886818-33e9-4670-a6be-2ab23d4b1992)
 
 **Delete Infra**
 ````
