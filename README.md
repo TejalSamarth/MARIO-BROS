@@ -4,30 +4,30 @@ Create EKS cluster using Terraform
 # PROJECT MARIO BROS
 
 ## Project  Workflow
-Step 1 → Login and basics setup
+Step 1 : Login and basics setup
 
-Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
+Step 2 : Setup Docker ,Terraform ,aws cli , and Kubectl
 
-Step 3 → IAM Role for EC2
+Step 3 : IAM Role for EC2
 
-Step 4 →Attach IAM role with your EC2
+Step 4 : Attach IAM role with your EC2
 
-Step 5 → Building Infrastructure Using terraform
+Step 5 : Building Infrastructure Using terraform
 
-Step 6 → Creation of deployment and service for EKS
+Step 6 : Creation of deployment and service for EKS
 
 
 
-### Step 1 → Login  and  basics  setup
+### Step 1 : Login  and  basics  setup
 1. Click on launch Instance
-   ![click on launch inst](https://github.com/user-attachments/assets/657cb38d-48a7-4c86-878c-717112096ad1)
+   
 
 2. Connect to EC2-Instance
    
 
 5. Attach role to ec2 instance
 
-### Step 2 → Setup  Tools
+### Step 2 : Setup  Tools
 
 ````
 sudo apt update -y
@@ -98,11 +98,11 @@ mv ./kubectl ~/.local/bin/kubectl
 ````
 kubectl version --client
 ````
-### Step 3 → IAM  Role  for  EC2
+### Step 3 : IAM  Role  for  EC2
 create role:
 ![atach iamrole](https://github.com/user-attachments/assets/e4cbfd73-af93-45e5-bc87-3a659fb2fa90)
 
-### Step 4 →Attach  IAM  role  with your  EC2 
+### Step 4 : Attach  IAM  role  with your  EC2 
 go to EC2 
 click on actions → security → modify IAM role option
 - administrator access
@@ -114,11 +114,11 @@ click on actions → security → modify IAM role option
 
 ![iam policies for mariodb role project](https://github.com/user-attachments/assets/513768ee-6855-411d-be76-48bec7ba2ef0)
 
-### Step 5 → Building Infrastructure  Using  terraform
+### Step 5 : Building Infrastructure  Using  terraform
 Install  GIT
 ````
 sudo apt install git -y
-git clone https://github.com/abhipraydhoble/Project-Super-Mario.git
+git clone https://github.com/TejalSamarth/MARIO-BROS.git
 cd Project-Super-Mario
 cd EKS-TF
 vim backend.tf
@@ -135,7 +135,7 @@ terraform apply --auto-approve
 aws eks update-kubeconfig --name EKS_CLOUD --region ap-southeast-1 --profile eks
 ````
 
-### Step 6 → Creation  of  deployment  and service  for  EKS
+### Step 6 : Creation  of  deployment  and service  for  EKS
 change the directory where deployment and service files are stored use the command →
 ````
 cd ..
