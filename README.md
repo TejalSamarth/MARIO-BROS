@@ -3,7 +3,7 @@ Create EKS cluster using Terraform
 
 # PROJECT MARIO BROS
 
-## {Project  Workflow}
+## Project  Workflow
 Step 1 → Login and basics setup
 
 Step 2 → Setup Docker ,Terraform ,aws cli , and Kubectl
@@ -18,7 +18,7 @@ Step 6 → Creation of deployment and service for EKS
 
 
 
-### $\color{red} \textbf {Step 1 → Login  and  basics  setup}$
+### Step 1 → Login  and  basics  setup
 1. Click on launch Instance
    ![instance](https://github.com/abhipraydhoble/Project-Super-Mario/assets/122669982/5fe51373-eaac-4f7c-9669-34c578277051)
 2. Connect to EC2-Instance
@@ -27,12 +27,12 @@ Step 6 → Creation of deployment and service for EKS
    
 5. Attach role to ec2 instance
 
-### $\color{red} \textbf {Step 2 → Setup  Tools}$
+### Step 2 → Setup  Tools
 
 ````
 sudo apt update -y
 ````
-$\color{blue} \textbf {Setup  Docker:}$
+$ Setup  Docker $
 ````
 sudo apt install docker.io -y
 sudo systemctl start docker
